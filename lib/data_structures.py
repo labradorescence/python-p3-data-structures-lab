@@ -103,3 +103,12 @@ def create_spicy_food(spicy_foods, spicy_food):
     spicy_foods.append(spicy_food)
     return spicy_foods
     pass
+
+
+def sort_spicy_foods(spicy_foods):
+    heat_levels = [each_food["heat_level"] for each_food in spicy_foods]
+
+    heat_levels.sort()
+    print(heat_levels)
+
+sort_spicy_foods(spicy_foods)
